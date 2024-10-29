@@ -16,6 +16,7 @@ def contact(request):
 
 def product(request):
     products = Product.objects.all()
+    print(products)
     return render(request, 'myapp/products.html', {'products': products})
 
 def product_detail(request, pk):
