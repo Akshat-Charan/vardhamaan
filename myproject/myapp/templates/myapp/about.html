@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | V-Kukware</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Prompt", sans-serif;
+            background-color: #f2f2f2;
+        }
+        h1, h2, h3 {
+            font-family: 'Prompt', sans-serif;
+        }
+        h4 {
+            font-family: 'Prompt', sans-serif;
+            font-size: 1.2rem;
+        }
+        .top-text {
+            font-style: italic;
+            font-weight: 700;
+            color : #FFFFFF;
+            text-align: right;
+            margin-right: 10rem;
+
+        }
+        .Preferred-Choice {
+            margin-top: 3rem;
+            text-align: center;
+            font-weight: 700;
+            color : #FFFFFF;
+        }
+        .highlight-orange{
+            font-style: italic;
+            color: #E08130;
+        }
+        .white-header{
+            margin-top: 0.6rem;
+            color: #FFFFFF;
+        }
+        .white-header-bold{
+            font-style: Bold;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        .white-header-bold-right{
+            font-style: Bold;
+            font-weight: 700;
+            color: #FFFFFF;
+            text-align: right;
+        }
+
+        p{
+            font-family: "Inter", sans-serif;
+        }
+        .footer-text{
+            font-family: "Prompt", sans-serif;
+            font-weight: 800;
+            color: #FFFFFF;
+            opacity: 0.6;
+
+        }
+        .LLC {
+            font-weight: 700;
+            opacity: 0.8;
+        }
+        .nav {
+            font-weight: 600;
+            opacity: 1;
+        }
+        .big {
+            opacity: 1;
+            font-size: 3rem;
+        }
+        .Inter {
+            opacity: 0.8;
+            font-family: "Inter", sans-serif;
+        }
+        .forefront {
+            margin-top: 1rem;
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: #FFFFFF;
+            text-align: right;
+            margin-right: 10rem;
+        }
+        .Below-Preferred-Choice {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 0.7rem;
+            
+        }
+        .small-orange-text {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 0.9rem;
+        }
+        .white-para{
+            color: #FFFFFF;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .white-para-right{
+            color: #FFFFFF;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: right;
+        }
+        .white-para-bottom{
+            color: #FFFFFF;
+            font-size: 0.9rem;
+            vertical-align: bottom;
+        }
+        .hero {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .white-para-bullet {
+            font-family: 'Prompt', sans-serif;
+            color: #FFFFFF;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .align-right {
+            text-align: right;
+            list-style-position: inside;
+        }
+        .know-more-text {
+            font-family: 'Prompt', sans-serif;
+            color: #EF7C00;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;         
+        }
+        .contact-us-text {
+            font-family: 'Prompt', sans-serif;
+            color: #EF7C00;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0;         
+        }
+        body {
+            {% load static %}
+            background-image: url('{% static "myapp/images/background.png" %}');
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .features {
+            background-color: #FFA500;
+            padding: 40px 0;
+            color: #fff;
+        }
+        .product-series {
+            margin-top: 30px;
+            padding: 40px 0;
+            background-color: #fff;
+        }
+        
+        .transparent-background {
+            background-color: rgba(255, 255, 255, 0);
+            margin-left: 4rem;
+            margin-right: 1rem;
+
+        }
+        img {
+            
+        }
+        .img-logo {
+            max-width: 228px;
+            max-height: 80px;
+        }
+        .img-circle {
+            max-width: 12rem;
+            max-height: 12rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+
+        .navbar {
+            background-color: transparent !important;
+        }
+        .navbar-nav .nav-item:nth-child(2) .nav-link {
+            color:  #E08130;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 4rem; /* Adjust the value as needed */
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+        .container-with-margin {
+            margin-top: 6rem; /* Adjust as needed */
+            margin-bottom: 2rem;
+        }
+        .custom-rounded-div {
+            background-color: #EF7C00;
+            border-top-right-radius: 10rem; /* Adjust the radius as needed */
+            padding-bottom: 5rem;
+            padding-top: 3rem;
+        }
+        .custom-rounded-div .order-3 {
+            margin-top: auto; /* Pushes the text to the bottom */
+        }
+        .container-bottom{
+            text-align: bottom;
+        }
+        .know-more-btn {
+            background-color: white; /* White background */
+            color: #EF7C00; /* Text color */
+            border: transparent; /* Border color */
+            padding: 0.8rem 4rem; /* Pading for size */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 1.5rem; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            margin-left: 1.3rem;
+            display: inline-block; /* Allows width and height adjustment */
+            text-align: center;    /* Centers the text horizontally */
+            vertical-align: middle; /* Aligns the text vertically */
+            line-height: normal
+            
+        }
+        .align-right {
+            margin-left: auto;
+            display: block;
+        }
+        
+        {% comment %} .know-more-btn:hover {
+            background-color: black; /* Background color on hover */
+            color: white; /* Text color on hover */
+        } {% endcomment %}
+
+        footer {
+            background-color: transparent;
+            color: black;
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+
+<header class="hero">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        {% load static %}
+
+    <!-- Display the image -->
+    <img class="img-logo" src="{% static 'myapp/images/V-kukware-Logo.png' %}" alt=" " />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}"><h4>Home</h4></a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}"><h4>About Us</h4></a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'products' %}"><h4>Products</h4></a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}"><h4>Contact Us</h4></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="custom-rounded-div">
+    <div class="transparent-background">
+        <div class="row align-items-center">
+            <div class="col-md-6 algin-left">
+                <h1 class="top-text align-left">Premium<br/> Cookware<br/> Solution! </h1>
+                <p class="forefront">We are at the forefront of<br/> revolutionizing the culinary<br/> experiences in households worldwide.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'myapp/images/about-us.png' %}" class="img-fluid" alt="Cookware Image">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="Preferred-Choice">WE ARE THE PREFERRED CHOICE!</h1>
+        <p class="Below-Preferred-Choice"> Vardhaman has been at the forefront of revolutionsing culinary experience in <br/>households worldwide for 20 years! Here's Why </p>
+    </div>
+
+
+    <div class="container-with-margin">
+        <div class="row align-items-center">
+            <!-- First Column with Image and Text -->
+            <div class="col-md-4 text-center" >
+                <img class="img-circle" src="{% static 'myapp/images/seamless-usage.png' %}" class="img-fluid" alt="Image 1">
+                <p class="small-orange-text">Seamlessness in Usage and Affordability </p>
+            </div>
+            <!-- Second Column with Image and Text -->
+            <div class="col-md-4 text-center">
+                <img class="img-circle" src="{% static 'myapp/images/uncompromising-quality.png' %}" class="img-fluid" alt="Image 2">
+                <p class="small-orange-text">Uncompromising Quality</p>
+            </div>
+            <!-- Third Column with Image and Text -->
+            <div class="col-md-4 text-center">
+                <img class="img-circle" src="{% static 'myapp/images/futuristic-innovation.png' %}" class="img-fluid" alt="Image 3">
+                <p class="small-orange-text">Futuristic & Dynamic Innovation </p>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <p class="footer-text"> DELIVERING A PREMMIUM COOKING EXPERIANCE</p>
+    <p class="footer-text big">Request More Information</p>
+    <p class="footer-text Inter">Have we missed anything? Have any other questions?<br/>
+        Feel free to contact us for further support.</p>
+    <br>
+    <button class="know-more-btn"><p class="contact-us-text">Contact Us</p></button>
+    
+    <br>
+    <br>
+    <p class="footer-text LLC">@ 2024 Vardhaman LLC</p>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Logo on the Left -->
+            <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+                <a href="#" class="navbar-brand">
+                    <img src="{% static 'myapp/images/V-kukware-Logo.png' %}" alt="Logo" style="height: 40px;">
+                </a>
+            </div>
+
+            <!-- Navigation Links in the Middle -->
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <ul class="navbar-nav flex-row justify-content-center">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark" href="#"><p class="footer-text nav"> About</p></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark" href="#"><p class="footer-text nav"> Products</p></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark" href="#"><p class="footer-text nav"> Home</p></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social Media Icons on the Right -->
+            <div class="col-md-4 text-md-end text-center">
+                <a href="#" class="mx-2">
+                    <img src="{% static 'myapp/images/linked-in.png' %}" alt="LinkedIn" style="width: 45px; height: 45px;">
+                </a>
+                <a href="#" class="mx-2">
+                    <img src="{% static 'myapp/images/facebook.png' %}" alt="Facebook" style="width: 45px; height: 45px;">
+                </a>
+                <a href="#" class="mx-2">
+                    <img src="{% static 'myapp/images/instagram.png' %}" alt="Instagram" style="width: 45px; height: 45px;">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

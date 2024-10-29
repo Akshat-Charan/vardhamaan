@@ -1,0 +1,24 @@
+<!-- product_list.html -->
+<div class="container">
+    <h1>Product List</h1>
+    <div class="row">
+        {% if products.exists %}
+            {% for product in products %}
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ product.image1.url }}" class="card-img-top" alt="{{ product.name }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p>{{ product.description }}</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#productModal" data-id="{{ product.id }}">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No products available.</p>
+        {% endif %}
+    </div>
+</div>
